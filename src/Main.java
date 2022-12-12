@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -11,9 +13,9 @@ public class Main {
         System.out.println("Задача_1");
         System.out.println();
 
-        int oneArr[] = new int[]{1, 2, 3};
-        for (int i = 0; i < oneArr.length; i++) {
-            oneArr[i] = i + 1;
+        int oneArr[] = new int[3];
+        for (int index = 0; index < oneArr.length; index++) {
+            oneArr[index] = index + 1;
         }
 
         double twoArr[] = {1.57d, 7.654d, 9.986d};
@@ -29,8 +31,8 @@ public class Main {
         System.out.println();
 
         int oneArr[] = new int[3];
-        for (int i = 0; i < oneArr.length; i++) {
-            oneArr[i] = i + 1;
+        for (int index = 0; index < oneArr.length; index++) {
+            oneArr[index] = index + 1;
         }
         for (int i = 0; i < oneArr.length; i++) {
             if (i == oneArr.length - 1) {
@@ -48,12 +50,12 @@ public class Main {
             System.out.print(twoArr[i] + ", ");
         }
         int threeArr[] = {17, 28, 39};
-        for (int i = threeArr.length; i < 0; i++) {
+        for (int i = 0; i < threeArr.length; i++) {
             if (i == threeArr.length - 1) {
-                System.out.println(threeArr[i - 1]);
+                System.out.println(threeArr[i]);
                 break;
             }
-            System.out.print(threeArr[i - 1] + ", ");
+            System.out.print(threeArr[i] + ", ");
         }
         System.out.println();
         System.out.println();
@@ -63,9 +65,10 @@ public class Main {
 
         System.out.println("Задача_3");
         System.out.println();
+
         int[] oneArr = new int[3];
-        for (int i = 0; i < oneArr.length; i++) {
-            oneArr[i] = i + 1;
+        for (int index = 0; index < oneArr.length; index++) {
+            oneArr[index] = index + 1;
         }
         for (int i = oneArr.length; i > 0; i--) {
             if (i == 1) {
@@ -100,6 +103,22 @@ public class Main {
         System.out.println("Задача_4");
         System.out.println();
 
+        int oneArr[] = new int[3];
+
+        for (int index = 0; index < oneArr.length; index++) {
+            oneArr[index] = index + 1;
+        }
+
+//        int i = 0;
+
+        for (int a = 0; a < oneArr.length; a++) {
+            if (oneArr[a] % 2 != 0) {
+                int i = oneArr[a] + 1;
+                oneArr[a] = i;
+            }
+        }
+
+        System.out.println(Arrays.toString(oneArr));
 
     }
 
