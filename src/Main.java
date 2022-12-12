@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Задача_2");
         System.out.println();
 
-        int oneArr[] = new int[]{1, 2, 3};
+        int oneArr[] = new int[3];
         for (int i = 0; i < oneArr.length; i++) {
             oneArr[i] = i + 1;
         }
@@ -48,12 +48,12 @@ public class Main {
             System.out.print(twoArr[i] + ", ");
         }
         int threeArr[] = {17, 28, 39};
-        for (int i = 0; i < threeArr.length; i++) {
+        for (int i = threeArr.length; i < 0; i++) {
             if (i == threeArr.length - 1) {
-                System.out.println(threeArr[i]);
+                System.out.println(threeArr[i - 1]);
                 break;
             }
-            System.out.print(threeArr[i] + ", ");
+            System.out.print(threeArr[i - 1] + ", ");
         }
         System.out.println();
         System.out.println();
@@ -63,7 +63,33 @@ public class Main {
 
         System.out.println("Задача_3");
         System.out.println();
-
+        int[] oneArr = new int[3];
+        for (int i = 0; i < oneArr.length; i++) {
+            oneArr[i] = i + 1;
+        }
+        for (int i = oneArr.length; i > 0; i--) {
+            if (i == 1) {
+                System.out.println(oneArr[i - 1]);
+                break;
+            }
+            System.out.print(oneArr[i - 1] + ", ");
+        }
+        double twoArr[] = {1.57d, 7.654d, 9.986d};
+        for (int i = twoArr.length; i > 0; i--) {
+            if (i == 1) {
+                System.out.println(twoArr[i - 1]);
+                break;
+            }
+            System.out.print(twoArr[i - 1] + ", ");
+        }
+        int threeArr[] = {17, 28, 39};
+        for (int i = threeArr.length; i > 0; i--) {
+            if (i == 1) {
+                System.out.println(threeArr[i - 1]);
+                break;
+            }
+            System.out.print(threeArr[i - 1] + ", ");
+        }
 
         System.out.println();
         System.out.println();
