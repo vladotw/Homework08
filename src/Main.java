@@ -109,8 +109,6 @@ public class Main {
             oneArr[index] = index + 1;
         }
 
-//        int i = 0;
-
         for (int a = 0; a < oneArr.length; a++) {
             if (oneArr[a] % 2 != 0) {
                 int i = oneArr[a] + 1;
