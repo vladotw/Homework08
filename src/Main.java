@@ -13,13 +13,13 @@ public class Main {
         System.out.println("Задача_1");
         System.out.println();
 
-        int oneArr[] = new int[3];
+        int[] oneArr = new int[3];
         for (int index = 0; index < oneArr.length; index++) {
             oneArr[index] = index + 1;
         }
 
-        double twoArr[] = {1.57d, 7.654d, 9.986d};
-        char threeArr[] = {'a', 'b', 'c'};
+        double[] twoArr = {1.57d, 7.654d, 9.986d};
+        char[] threeArr = {'a', 'b', 'c'};
 
         System.out.println();
         System.out.println();
@@ -30,13 +30,13 @@ public class Main {
         System.out.println("Задача_2");
         System.out.println();
 
-        int oneArr[] = new int[3];
+        int[] oneArr = new int[3];
         for (int index = 0; index < oneArr.length; index++) {
             oneArr[index] = index + 1;
         }
 
-        double twoArr[] = {1.57d, 7.654d, 9.986d};
-        char threeArr[] = {'a', 'b', 'c'};
+        double[] twoArr = {1.57d, 7.654d, 9.986d};
+        char[] threeArr = {'a', 'b', 'c'};
 
         for (int i = 0; i < oneArr.length; i++) {
             if (i == oneArr.length - 1) {
@@ -71,8 +71,8 @@ public class Main {
         System.out.println();
 
         int[] oneArr = {1, 2, 3};
-        double twoArr[] = {1.57d, 7.654d, 9.986d};
-        char threeArr[] = {'a', 'b', 'c'};
+        double[] twoArr = {1.57d, 7.654d, 9.986d};
+        char[] threeArr = {'a', 'b', 'c'};
 
         for (int i = oneArr.length - 1; i >= 0 ; i--) {
 
@@ -112,7 +112,7 @@ public class Main {
         System.out.println("Задача_4");
         System.out.println();
 
-        int oneArr[] = new int[3];
+        int[] oneArr = new int[3];
 
         for (int index = 0; index < oneArr.length; index++) {
             oneArr[index] = index + 1;
